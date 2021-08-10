@@ -3,3 +3,21 @@
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.description {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.price {
+  margin-left: 10px;
+  color: rgb(93, 197, 93);
+  font-style: italic;
+}
+
+.quantity {
+  color: rgb(93, 197, 93);
+}
+
+.purchase:hover {
+  background-color: rgb(241, 10, 10);
+}
