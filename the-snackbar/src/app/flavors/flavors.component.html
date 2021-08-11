@@ -5,8 +5,9 @@
       {{ flavor.flavor }}
       <p class="description">{{ flavor.description }}</p>
     </h2>
-    <span class="quantity">Quantity:{{ flavor.quantity }}</span>
-    <span class="price">Price: ${{ flavor.price }}</span>
+    <span class="quantity">{{ flavor.quantityOne }}</span>
+    <span class="price">${{ flavor.price }}/${{ flavor.priceOne }}</span>
+    <br />
     <button class="purchase">Purchase</button>
   </li>
 </ul>

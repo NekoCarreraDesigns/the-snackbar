@@ -10,7 +10,7 @@ import { FLAVORS } from '../mock-flavors';
 export class FlavorsComponent implements OnInit {
 
   flavors = FLAVORS;
-
+  
   constructor() { }
 
   ngOnInit(): void {
