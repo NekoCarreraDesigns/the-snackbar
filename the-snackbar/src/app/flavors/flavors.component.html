@@ -1,14 +1,12 @@
-<h1 class="flavor">{{ flavor.flavor }}</h1>
-<div class="description">
-  <p>
-    Lucky Charms cake is magically delicious, made from actual Lucky Charms.
-    What!? I know what your thinking. You: " I want one of these right NOW",
-    that's exactly what you were thinking? Lucky Charms cake, topped with Lucky
-    Charms infused buttercream frosting, garnished with cereal bits
-  </p>
-  <h2 class="description">
+<h1 class="flavor">Flavors</h1>
+<ul>
+  <li *ngFor="let flavor of flavors">
+    <h2 class="flavor-name">
+      {{ flavor.flavor }}
+      <p class="description">{{ flavor.description }}</p>
+    </h2>
     <span class="quantity">Quantity:{{ flavor.quantity }}</span>
-    <span class="price">Price: ${{ flavor.price }} for half dozen</span>
-  </h2>
-</div>
-<button class="purchase">Purchase</button>
+    <span class="price">Price: ${{ flavor.price }}</span>
+    <button class="purchase">Purchase</button>
+  </li>
+</ul>

@@ -3,8 +3,12 @@
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.description {
+.flavor-name {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
+}
+.description {
+  font-size: 15px;
   letter-spacing: 0.5px;
 }
 
