@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core'; 
 import { Flavors } from '../flavors';
 import { FLAVORS } from '../mock-flavors';
+import { FlavorsService } from '../flavors.service';
 
 @Component({
   selector: 'app-flavors',
@@ -9,11 +10,16 @@ import { FLAVORS } from '../mock-flavors';
 })
 export class FlavorsComponent implements OnInit {
 
-  flavors = FLAVORS;
+  flavors: Flavors[] = [];
+
+  getFlavors(): void {
+    this.flavors = this.flavorsService.getFlavors();
+  }
   
-  constructor() { }
+  constructor(private flavorsService: FlavorsService) { }
 
   ngOnInit(): void {
+    this.getFlavors();
   }
 
 }
