@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { Flavors } from './flavors';
 import { FLAVORS } from './mock-flavors';
 
@@ -7,8 +8,9 @@ import { FLAVORS } from './mock-flavors';
 })
 export class FlavorsService {
 
-  getFlavors(): Flavors[] {
-    return FLAVORS;
+  getFlavors(): Observable<Flavors[]> {
+    const flavors = of(FLAVORS);
+    return flavors
   }
 
   constructor() { }

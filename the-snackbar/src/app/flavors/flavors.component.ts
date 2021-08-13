@@ -13,7 +13,7 @@ export class FlavorsComponent implements OnInit {
   flavors: Flavors[] = [];
 
   getFlavors(): void {
-    this.flavors = this.flavorsService.getFlavors();
+    this.flavorsService.getFlavors().subscribe(flavors => this.flavors = flavors);
   }
   
   constructor(private flavorsService: FlavorsService) { }
