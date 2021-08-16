@@ -10,6 +10,12 @@ import { FlavorsService } from '../flavors.service';
 })
 export class FlavorsComponent implements OnInit {
 
+  selectedFlavor?: Flavors;
+  onSelect(flavors: Flavors): void {
+    this.selectedFlavor = flavors;
+    console.log("clicked")
+  }
+
   flavors: Flavors[] = [];
 
   getFlavors(): void {

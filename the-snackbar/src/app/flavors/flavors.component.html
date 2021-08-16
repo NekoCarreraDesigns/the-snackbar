@@ -8,6 +8,8 @@
     <span class="quantity">{{ flavor.quantityOne }}</span>
     <span class="price">${{ flavor.price }}/${{ flavor.priceOne }}</span>
     <br />
-    <button class="purchase">Purchase</button>
+    <button (click)="onSelect(flavor)" class="purchase" routerLink="/purchase">
+      Purchase
+    </button>
   </li>
 </ul>
