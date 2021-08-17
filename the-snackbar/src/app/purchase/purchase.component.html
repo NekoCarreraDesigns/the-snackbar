@@ -6,7 +6,11 @@
     required
     [(ngModel)]="model.firstName"
     name="name"
+    #name="ngModel"
   />
+  <div [hidden]="name.valid || name.pristine" class="alert">
+    Please enter a valid name
+  </div>
   <br />
   <label for="last-name" id="name" class="last-name">Last Name</label>
   <input
@@ -15,7 +19,11 @@
     required
     [(ngModel)]="model.lastName"
     name="last-name"
+    #lastName="ngModel"
   />
+  <div [hidden]="lastName.valid || lastName.pristine" class="alert">
+    Please enter a valid name
+  </div>
   <br />
   <label for="card-number" id="card-number" class="card-number"
     >Card Number</label
@@ -26,7 +34,11 @@
     required
     [(ngModel)]="model.cardNumber"
     name="cardNumber"
+    #number="ngModel"
   />
+  <div [hidden]="number.valid || number.pristine" class="alert">
+    Please enter a valid number
+  </div>
   <br />
   <label for="expiration-date" id="expiration-date" class="expiration-date"
     >Expiration</label
@@ -37,7 +49,11 @@
     required
     [(ngModel)]="model.expiration"
     name="expiration"
+    #expiration="ngModel"
   />
+  <div [hidden]="expiration.valid || expiration.pristine" class="alert">
+    Please enter a valid number
+  </div>
   <br />
   <label for="cvv" id="cvv" class="cvv">CVV</label>
   <input
@@ -46,7 +62,11 @@
     required
     [(ngModel)]="model.cvv"
     name="cvv"
+    #cvv="ngModel"
   />
+  <div [hidden]="cvv.valid || cvv.pristine" class="alert">
+    Please enter a valid number
+  </div>
   <br />
   <div class="customer-form">
     <label for="flavors" id="flavors">Select Flavor</label>

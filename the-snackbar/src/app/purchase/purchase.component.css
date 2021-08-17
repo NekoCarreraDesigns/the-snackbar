@@ -17,3 +17,6 @@
 .purchased {
   border-radius: 10px;
 }
+.alert {
+  background-color: red;
+}
