@@ -4,6 +4,7 @@ export class Purchase {
         public lastName: string,
         public cardNumber: number,
         public expiration: number,
-        public cvv: number
+        public cvv: number,
+        public flavors: string
     ) {}
 }
