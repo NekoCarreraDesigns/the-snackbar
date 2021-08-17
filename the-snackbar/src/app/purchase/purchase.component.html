@@ -1,26 +1,60 @@
-<form class="customer-form">
+<form #purchaseForm="ngForm" class="customer-form">
   <label for="first-name" id="name" class="first-name">First Name</label>
-  <input class="name" type="text" required />
+  <input
+    class="name"
+    type="text"
+    required
+    [(ngModel)]="model.firstName"
+    name="name"
+  />
   <br />
   <label for="last-name" id="name" class="last-name">Last Name</label>
-  <input class="name" type="text" required />
+  <input
+    class="name"
+    type="text"
+    required
+    [(ngModel)]="model.lastName"
+    name="last-name"
+  />
   <br />
   <label for="card-number" id="card-number" class="card-number"
     >Card Number</label
   >
-  <input class="number" type="number" required />
+  <input
+    class="number"
+    type="number"
+    required
+    [(ngModel)]="model.cardNumber"
+    name="cardNumber"
+  />
   <br />
   <label for="expiration-date" id="expiration-date" class="expiration-date"
     >Expiration</label
   >
-  <input class="expiration-date" type="number" required />
+  <input
+    class="expiration-date"
+    type="number"
+    required
+    [(ngModel)]="model.expiration"
+    name="expiration"
+  />
   <br />
   <label for="cvv" id="cvv" class="cvv">CVV</label>
-  <input class="cvv" type="number" required />
+  <input
+    class="cvv"
+    type="number"
+    required
+    [(ngModel)]="model.cvv"
+    name="cvv"
+  />
   <br />
   <div class="customer-form">
     <label for="flavors" id="flavors">Select Flavor</label>
-    <select></select>
+    <select class="flavors-selection" id="flavors-selection">
+      <option *ngFor="let flavor of flavors" [value]="flavor">
+        {{ flavor }}
+      </option>
+    </select>
     <button class="purchased">Purchase</button>
   </div>
 </form>
