@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { LogIn } from '../log-in';
 
 @Component({
   selector: 'app-log-in',
   templateUrl: './log-in.component.html',
   styleUrls: ['./log-in.component.css']
 })
-export class LogInComponent implements OnInit {
+export class LogInComponent {
 
-  constructor() { }
+model = new LogIn ("Schwifty69", "Bill", "Smith", "1234GetSchwifty")
 
-  ngOnInit(): void {
-  }
+submitted = false;
+
+onSubmit () {this.submitted = true}
 
 }
