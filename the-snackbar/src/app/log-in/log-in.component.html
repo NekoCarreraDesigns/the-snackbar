@@ -1,1 +1,51 @@
-<p>log-in works!</p>
+<form #logInForm="ngForm" class="log-in-form">
+  <label for="username" id="name" class="username">Username</label>
+  <input
+    class="user-name"
+    type="text"
+    required
+    [(ngModel)]="model.userName"
+    name="username"
+    #userName="ngModel"
+  />
+  <div [hidden]="userName.valid || userName.pristine" class="alert">
+    Please enter a username
+  </div>
+  <label for="first-name" id="name" class="first-name">First Name</label>
+  <input
+    class="firstname"
+    type="text"
+    required
+    [(ngModel)]="model.firstName"
+    name="first-name"
+    #firstName="ngModel"
+  />
+  <div [hidden]="firstName.valid || firstName.pristine" class="alert">
+    Please enter a first name
+  </div>
+  <label for="last-name" id="name" class="last-name">Last Name</label>
+  <input
+    class="lastname"
+    type="text"
+    required
+    [(ngModel)]="model.lastName"
+    name="last-name"
+    #lastName="ngModel"
+  />
+  <div [hidden]="lastName.valid || lastName.pristine" class="alert">
+    Please enter a last name
+  </div>
+  <label for="password" id="name" class="password">Password</label>
+  <input
+    class="pass-word"
+    type="password"
+    required
+    [(ngModel)]="model.passWord"
+    name="password"
+    #passWord="ngModel"
+  />
+  <div [hidden]="passWord.valid || passWord.pristine" class="alert">
+    Please enter a valid password
+  </div>
+  <button class="submitted">Log In</button>
+</form>

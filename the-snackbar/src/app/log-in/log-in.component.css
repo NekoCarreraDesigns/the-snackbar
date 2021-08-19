@@ -1,0 +1,33 @@
+.log-in-form {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.username,
+.first-name,
+.last-name,
+.password {
+  font-size: 20px;
+  font-weight: bold;
+}
+.user-name,
+.firstname,
+.lastname,
+.pass-word {
+  border-radius: 10px;
+  height: 30px;
+}
+
+.submitted {
+  border-radius: 10px;
+  height: 30px;
+  box-shadow: 5px;
+  font-size: 20px;
+}
+
+.submitted:hover {
+  background-color: blue;
+  font-weight: bolder;
+}

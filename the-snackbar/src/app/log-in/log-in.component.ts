@@ -8,7 +8,7 @@ import { LogIn } from '../log-in';
 })
 export class LogInComponent {
 
-model = new LogIn ("Schwifty69", "Bill", "Smith", "1234GetSchwifty")
+model = new LogIn ("", "", "", "")
 
 submitted = false;
 
