@@ -1,4 +1,4 @@
-<form #purchaseForm="ngForm" class="customer-form">
+<form (ngSubmit)="onSubmit()" #purchaseForm="ngForm" class="customer-form">
   <label for="first-name" id="name" class="first-name">First Name</label>
   <input
     class="name"
@@ -81,6 +81,12 @@
         {{ flavor }}
       </option>
     </select>
-    <button class="purchased">Purchase</button>
+    <button
+      type="submit"
+      class="purchased"
+      [disabled]="!purchaseForm.form.valid"
+    >
+      Purchase
+    </button>
   </div>
 </form>
