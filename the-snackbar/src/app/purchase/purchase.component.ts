@@ -7,6 +7,7 @@ import { Purchase } from '../purchase';
   styleUrls: ['./purchase.component.css']
 })
 export class PurchaseComponent {
+  quantities = ["Half Dozen", "One Dozen", "Two Dozen"]
 
   flavors =[ 'Lucky Charms', 'Chocolate Overlord', 'Sunrise Daydreams', 'Hummingbird', 'Lucky Charms', 'Marshmallow Fudge Surprise', 'Tropical Punch', 'Raspberry Ganache', 'Tuxedo Ganache', 'Dark and Dreamy'];
 

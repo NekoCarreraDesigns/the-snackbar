@@ -69,6 +69,12 @@
   </div>
   <br />
   <div class="customer-form">
+    <label for="quantity" id="quantity">Select Quantity</label>
+    <select class="quantity-selection" id="quantity-selection">
+      <option *ngFor="let quantity of quantities" [value]="quantity">
+        {{ quantity }}
+      </option>
+    </select>
     <label for="flavors" id="flavors">Select Flavor</label>
     <select class="flavors-selection" id="flavors-selection">
       <option *ngFor="let flavor of flavors" [value]="flavor">
