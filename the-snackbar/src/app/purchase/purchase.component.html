@@ -90,3 +90,22 @@
     </button>
   </div>
 </form>
+<div [hidden]="submitted">
+  <h1>Thank You For Your Purchase!</h1>
+  <h1
+    class="customer-name"
+    [(ngModel)]="model.firstName"
+    name="name"
+    #firstName="ngModel"
+  >
+    {{ model.firstName }}
+  </h1>
+  <h1
+    class="customer-last-name"
+    [(ngModel)]="model.lastName"
+    name="last-name"
+    #lastName="ngModel"
+  >
+    {{ model.lastName }}
+  </h1>
+</div>

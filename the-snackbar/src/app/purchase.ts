@@ -5,6 +5,7 @@ export class Purchase {
         public cardNumber: number,
         public expiration: number,
         public cvv: number,
+        public quantities: string,
         public flavors: string
     ) {}
 }

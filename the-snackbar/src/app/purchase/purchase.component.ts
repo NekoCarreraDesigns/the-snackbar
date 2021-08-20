@@ -11,7 +11,7 @@ export class PurchaseComponent {
 
   flavors =[ 'Lucky Charms', 'Chocolate Overlord', 'Sunrise Daydreams', 'Hummingbird', 'Lucky Charms', 'Marshmallow Fudge Surprise', 'Tropical Punch', 'Raspberry Ganache', 'Tuxedo Ganache', 'Dark and Dreamy'];
 
-  model = new Purchase ("Bill", "Smith", 1234567890123456, 30, 322, this.flavors[0]);
+  model = new Purchase ("Bill", "Smith", 1234567890123456, 30, 322, this.flavors[0], this.quantities[0]);
 
   submitted = false; 
 
