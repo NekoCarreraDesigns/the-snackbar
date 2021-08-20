@@ -7,6 +7,7 @@ import { FlavorsComponent } from './flavors/flavors.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { LogInComponent } from './log-in/log-in.component';
+import { SnackShackComponent } from './snack-shack/snack-shack.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LogInComponent } from './log-in/log-in.component';
     FlavorsComponent,
     WelcomeComponent,
     PurchaseComponent,
-    LogInComponent
+    LogInComponent,
+    SnackShackComponent
   ],
   imports: [
     BrowserModule,
