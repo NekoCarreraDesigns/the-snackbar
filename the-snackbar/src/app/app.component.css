@@ -5,8 +5,9 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 60px;
   background-image: url("https://images.unsplash.com/photo-1516746924755-babd21844370?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3ByaW5rbGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
-  background-position: cover;
-  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 nav a {
