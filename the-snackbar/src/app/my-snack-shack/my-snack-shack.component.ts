@@ -1,15 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MySnackShack } from '../my-snack-shack';
 @Component({
   selector: 'app-my-snack-shack',
   templateUrl: './my-snack-shack.component.html',
   styleUrls: ['./my-snack-shack.component.css']
 })
-export class MySnackShackComponent implements OnInit {
+export class MySnackShackComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    model = new MySnackShack ("AleisterGrowley", 100, "Hummingbird")
 }
