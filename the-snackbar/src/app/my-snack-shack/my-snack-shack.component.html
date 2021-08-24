@@ -1,17 +1,18 @@
-<h1 class="my-snack-shack-dashboard">username: Snack Shack Dashboard</h1>
-<div>
-  <img class="user-img" src="./assets/IMG_0356.jpg" />
-  <div class="user-stats">
-    <p>My name is Nicholas, I have the biggest sweet tooth</p>
-  </div>
-  <div class="reward-points">
-    <div>
-      <h1 class="points-header">Reward Points</h1>
-    </div>
-  </div>
-  <div class="user-flavors">
-    <div>
-      <h1 class="favorite-flavors">Favorite Flavors</h1>
-    </div>
-  </div>
+<h1 class="my-snack-shack-dashboard">
+  {{ model.userName }} Snack Shack Dashboard
+</h1>
+<img class="user-img" src="./assets/IMG_0356.jpg" />
+<div class="user-headline">
+  <p>My name is Nicholas, I have the biggest sweet tooth</p>
+</div>
+<div class="points">
+  <h1 class="points-header">
+    Reward Points:
+    {{ model.rewardPoints }}
+  </h1>
+</div>
+<div class="user-flavors">
+  <h1 class="favorite-flavors">
+    Favorite Flavors: {{ model.favoriteFlavors }}
+  </h1>
 </div>
