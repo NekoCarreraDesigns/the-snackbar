@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule} from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
 import { AppComponent } from './app.component';
 import { FlavorsComponent } from './flavors/flavors.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -25,7 +27,9 @@ import { MySnackShackComponent } from './my-snack-shack/my-snack-shack.component
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: false}
+      )
   ],
   providers: [],
   bootstrap: [AppComponent]
