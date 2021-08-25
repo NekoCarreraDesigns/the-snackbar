@@ -2,5 +2,29 @@
   text-align: center;
   font-size: 50px;
   font-family: fantasy;
-  color: crimson;
+  color: blueviolet;
+}
+
+.points {
+  display: flexbox;
+  background-color: deeppink;
+  float: right;
+  margin-right: 80px;
+  padding: 100px;
+}
+
+.user-flavors {
+  display: flexbox;
+  background-color: aqua;
+  float: right;
+  margin-right: 100px;
+  padding: 100px;
+}
+
+.user-img {
+  margin-left: 100px;
+}
+.user-headline {
+  font-size: 30px;
+  text-align: center;
 }
