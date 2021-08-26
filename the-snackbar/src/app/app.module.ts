@@ -10,6 +10,7 @@ import { LogInComponent } from './log-in/log-in.component';
 import { SnackShackComponent } from './snack-shack/snack-shack.component';
 import { MySnackShackComponent } from './my-snack-shack/my-snack-shack.component';
 import { MessagesComponent } from './messages/messages.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MessagesComponent } from './messages/messages.component';
     LogInComponent,
     SnackShackComponent,
     MySnackShackComponent,
-    MessagesComponent
+    MessagesComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
