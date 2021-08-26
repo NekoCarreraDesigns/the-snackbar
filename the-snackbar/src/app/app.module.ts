@@ -12,6 +12,7 @@ import { PurchaseComponent } from './purchase/purchase.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { SnackShackComponent } from './snack-shack/snack-shack.component';
 import { MySnackShackComponent } from './my-snack-shack/my-snack-shack.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -21,15 +22,16 @@ import { MySnackShackComponent } from './my-snack-shack/my-snack-shack.component
     PurchaseComponent,
     LogInComponent,
     SnackShackComponent,
-    MySnackShackComponent
+    MySnackShackComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: false}
-      )
+     HttpClientModule,
+     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: false})
+      
   ],
   providers: [],
   bootstrap: [AppComponent]
