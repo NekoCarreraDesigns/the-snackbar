@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { MessageService } from './message.service';
 import { catchError, map, tap } from 'rxjs/operators'
 import { Observable, of } from 'rxjs';
 import { Flavors } from './flavors';
@@ -11,6 +12,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class FlavorsService {
 
   getFlavors(): Observable<Flavors[]> {
+    this.messageService.add('FlavorService: fetched  flavors')
     return this.http.get<Flavors[]>(this.flavorsURL).pipe(
       catchError(this.handleError<Flavors[]>('getFlavors', []))
     )
@@ -22,5 +24,5 @@ export class FlavorsService {
     }
   }
 
-  constructor(private http: HttpClient, private flavorsURL = "api/flavors") { }
+  constructor(private http: HttpClient, private flavorsService: FlavorsService, private messageService: MessageService, private flavorsURL = "api/flavors") { }
 }

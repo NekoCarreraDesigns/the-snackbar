@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Flavors } from '../flavors';
 import { FLAVORS } from '../mock-flavors';
 import { FlavorsService } from '../flavors.service';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-flavors',
@@ -13,6 +14,7 @@ export class FlavorsComponent implements OnInit {
   selectedFlavor?: Flavors;
   onSelect(flavors: Flavors): void {
     this.selectedFlavor = flavors;
+    this.messageService.add(`FlavorsComponent: Selected flavor=${flavors.flavor}`)
     console.log("clicked")
   }
 
@@ -22,7 +24,7 @@ export class FlavorsComponent implements OnInit {
     this.flavorsService.getFlavors().subscribe(flavors => this.flavors = flavors);
   }
   
-  constructor(private flavorsService: FlavorsService) { }
+  constructor(private flavorsService: FlavorsService, private messageService: MessageService) { }
 
   ngOnInit(): void {
     this.getFlavors();
