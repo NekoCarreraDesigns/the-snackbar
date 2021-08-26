@@ -14,11 +14,6 @@ export class MySnackShackComponent {
 
     model = new MySnackShack ("AleisterGrowley", 100, "Hummingbird")
 
-    flavors: Flavors[] = []
 
-    getFlavors(): void {
-      this.flavorsService.getFlavors().subscribe(flavors => this.flavors = flavors)
-    }
-
-    constructor( private flavorsService: FlavorsService) {}
+    constructor( ) {}
 }
