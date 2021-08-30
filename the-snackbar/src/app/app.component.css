@@ -1,6 +1,5 @@
 .title {
   text-align: center;
-  display: flexbox;
   color: chocolate;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 60px;
@@ -9,11 +8,13 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.nav-bar {
+  display: inline-flex;
+}
 nav a {
   padding: 10px;
+  display: flex;
   text-decoration: none;
-  display: flexbox;
   background-color: chocolate;
   color: #3d3d3d;
   border-radius: 4px;

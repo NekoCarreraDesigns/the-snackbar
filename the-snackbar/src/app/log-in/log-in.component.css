@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 30%;
+  padding: 20px;
 }
 
 .username,
@@ -16,6 +17,7 @@
 .firstname,
 .lastname,
 .pass-word {
+  display: flex;
   border-radius: 10px;
   height: 30px;
 }

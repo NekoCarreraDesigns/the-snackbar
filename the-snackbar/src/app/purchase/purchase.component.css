@@ -11,12 +11,19 @@
 .card-number,
 .expiration-date,
 .cvv {
+  display: flex;
   font-size: 20px;
   border-radius: 10px;
 }
 .purchased {
   border-radius: 10px;
+  width: 100px;
 }
 .alert {
   background-color: red;
+}
+
+.quantity-selection,
+.flavors-selection {
+  display: flex;
 }
