@@ -11,6 +11,7 @@ import { SnackShackComponent } from './snack-shack/snack-shack.component';
 import { MySnackShackComponent } from './my-snack-shack/my-snack-shack.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProfileComponent } from './profile/profile.component';
     SnackShackComponent,
     MySnackShackComponent,
     MessagesComponent,
-    ProfileComponent
+    ProfileComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
